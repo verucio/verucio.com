@@ -7,11 +7,11 @@
 .hero h1{align-self:center;font-size:clamp(58px,8.4vw,132px);line-height:.88;letter-spacing:-.062em;margin:0;max-width:1200px;font-weight:700}
 .hero-foot{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:16px;gap:30px}.hero-foot p{max-width:600px;margin:0;font-size:clamp(16px,1.25vw,20px);line-height:1.35}.arrow{font-size:14px;white-space:nowrap}
 
-/* V4: grid editorial deliberado 8/4 → 5/7 → 8/4 → 5/7 */
-.work{padding:48px var(--pad) 130px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(58px,5.5vw,92px) 30px;align-items:start}
+/* V5: grid editorial 8/4 → 5/7 → 8/4 → 5/7, com ritmo vertical mais compacto */
+.work{padding:42px var(--pad) 110px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(38px,3.8vw,64px) 30px;align-items:start}
 .project-8{grid-column:span 8}.project-4{grid-column:span 4}.project-5{grid-column:span 5}.project-7{grid-column:span 7}
 .project figure{margin:0;overflow:hidden;background:#ebe9e3;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3}
-.project-8 figure{aspect-ratio:16/9.65}.project-4.project-tall figure{aspect-ratio:3/4.08}.project-7 figure{aspect-ratio:16/10}.project-5 figure{aspect-ratio:4/3}
+.project-8 figure{aspect-ratio:16/9.65}.project-4.project-tall figure{aspect-ratio:3/3.55}.project-7 figure{aspect-ratio:16/10}.project-5 figure{aspect-ratio:4/3}
 .project img{width:100%;height:100%;object-fit:contain;transition:transform .55s cubic-bezier(.2,.8,.2,1)}.project:hover img{transform:scale(1.012)}
 .meta{display:flex;justify-content:space-between;align-items:flex-start;gap:22px;padding-top:12px;border-top:1px solid var(--ink);margin-top:10px;min-height:54px}.meta h2,.meta p{font-size:13px;line-height:1.25;margin:0}.meta h2{font-weight:700;max-width:58%}.meta p{text-align:right;opacity:.6;max-width:42%}
 
@@ -20,13 +20,13 @@
 .about{padding:130px var(--pad);border-top:1px solid var(--line);display:grid;grid-template-columns:4fr 8fr;gap:30px}.about h2{font-size:clamp(42px,6.2vw,92px);line-height:.95;letter-spacing:-.055em;margin:0 0 40px;max-width:1000px}.about div>p{font-size:clamp(18px,1.8vw,27px);line-height:1.35;max-width:850px}.about-secondary{margin-top:24px!important;font-size:clamp(16px,1.35vw,21px)!important;line-height:1.5!important;opacity:.72}
 footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first-child{font-size:14px}footer>a{display:inline-block;font-size:clamp(38px,7vw,108px);letter-spacing:-.06em;border-bottom:2px solid currentColor;margin:35px 0 90px}.small{font-size:12px;opacity:.6}
 
-/* V4: abertura um pouco mais compacta sem perder o vazio */
-.hero-v4{min-height:clamp(640px,86vh,900px);padding-top:clamp(36px,4.1vw,64px)}
-.hero-v4 h1{font-size:clamp(58px,8vw,124px);max-width:1120px}
+/* V5: abertura preserva o vazio e aproxima discretamente o início dos projetos */
+.hero-v5{min-height:clamp(620px,84vh,860px);padding-top:clamp(36px,4vw,62px)}
+.hero-v5 h1{font-size:clamp(58px,8vw,124px);max-width:1120px}
 
 @media(max-width:800px){
   .topbar{padding-top:15px;padding-bottom:15px}.topbar nav{gap:14px}
-  .hero,.hero-v4{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px;gap:22px}.hero h1,.hero-v4 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
+  .hero,.hero-v5{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px;gap:22px}.hero h1,.hero-v5 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
   .hero-foot{display:block}.arrow{display:inline-block;margin-top:22px}
   .work{display:block;padding-top:34px;padding-bottom:70px}.project{margin-bottom:54px}.project figure,.project-8 figure,.project-7 figure,.project-5 figure,.project-4.project-tall figure{aspect-ratio:auto}.project img{height:auto}
   .meta{display:block;min-height:0}.meta h2,.meta p{max-width:none}.meta p{text-align:left;margin-top:5px}
