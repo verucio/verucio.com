@@ -1,14 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verucio Ferraz — Graphic designer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Verucio Ferraz — Graphic Designer, Art Director e Illustrator.">
+  <title>Verucio Ferraz — Graphic Designer & Art Director</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Verucio Ferraz</h1>
-    <h2>Graphic designer</h2>
-    <p>Meu novo portfólio está em construção.</p>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Verucio Ferraz — início">VERUCIO FERRAZ</a>
+    <nav aria-label="Navegação principal">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Graphic Designer · Art Director · Illustrator</p>
+      <h1>Design editorial,<br>dados e narrativas<br>visuais.</h1>
+      <div class="hero-foot">
+        <p>Projetos editoriais, relatórios, infografia, apresentações e comunicação visual.</p>
+        <a href="#work" class="arrow">Selected work ↓</a>
+      </div>
+    </section>
+
+    <section id="work" class="work" aria-label="Projetos selecionados">
+      <article class="project project-wide">
+        <a href="#tabuleiro"><figure><img src="images/tabuleiro-saneamento.png" alt="Capa do Tabuleiro do Saneamento Básico 2025" loading="eager"></figure>
+        <div class="meta"><h2>Tabuleiro do Saneamento Básico 2025</h2><p>Editorial Design · Data Visualization</p></div></a>
+      </article>
+
+      <article class="project project-tall">
+        <a href="#chro"><figure><img src="images/perfil-chro-2025.png" alt="Capa O perfil do CHRO brasileiro 2025" loading="lazy"></figure>
+        <div class="meta"><h2>O perfil do CHRO brasileiro</h2><p>Report Design · Infographics · 2025</p></div></a>
+      </article>
+
+      <article class="project">
+        <a href="#meioambiente"><figure><img src="images/meio-ambiente-politicas-publicas.png" alt="Capa do guia Transversalidade de Meio Ambiente nas Políticas Públicas" loading="lazy"></figure>
+        <div class="meta"><h2>Meio Ambiente nas Políticas Públicas</h2><p>Editorial Design · Institutional</p></div></a>
+      </article>
+
+      <article class="project project-wide">
+        <a href="#epoca"><figure><img src="images/epoca-negocios-seguranca-digital.png" alt="Infográfico de segurança digital para Época Negócios" loading="lazy"></figure>
+        <div class="meta"><h2>Época Negócios — Segurança Digital</h2><p>Infographic Design · Data Visualization</p></div></a>
+      </article>
+
+      <article class="project">
+        <a href="#einstein"><figure><img src="images/einstein-insuficiencia-cardiaca.png" alt="Peça Excelência Einstein sobre insuficiência cardíaca" loading="lazy"></figure>
+        <div class="meta"><h2>Excelência Einstein</h2><p>Information Design · Healthcare</p></div></a>
+      </article>
+
+      <article class="project project-tall">
+        <a href="#alana"><figure><img src="images/guia-viagem-alana.png" alt="Capa Guia de Viagem Rio de Janeiro" loading="lazy"></figure>
+        <div class="meta"><h2>Guia de Viagem — Alana</h2><p>Editorial Design · Illustration</p></div></a>
+      </article>
+
+      <article class="project project-wide">
+        <a href="#investnews"><figure><img src="images/investnews-ia-slides.png" alt="Peça InvestNews Como criar slides com Inteligência Artificial" loading="lazy"></figure>
+        <div class="meta"><h2>InvestNews</h2><p>Digital Content · Social Media · Illustration</p></div></a>
+      </article>
+
+      <article class="project project-wide">
+        <a href="#diplomados"><figure><img src="images/epoca-negocios-diplomados.jpg" alt="Matéria Diplomados em isolamento, Época Negócios" loading="lazy"></figure>
+        <div class="meta"><h2>Época Negócios — Diplomados em isolamento</h2><p>Editorial Design · Art Direction</p></div></a>
+      </article>
+    </section>
+
+    <section class="case" id="tabuleiro">
+      <div class="case-title"><p>01 / Selected case</p><h2>Tabuleiro do<br>Saneamento Básico</h2><p class="case-copy">Projeto editorial e visualização de dados para publicação sobre regionalização e prestação dos serviços de saneamento básico.</p></div>
+      <div class="case-gallery"><img src="images/tabuleiro-saneamento.png" alt="Capa do projeto"><img src="images/tabuleiro-microrregioes.png" alt="Página interna com mapa e dados"><img src="images/infografico-regionalizacao.png" alt="Infográfico de regionalização"></div>
+    </section>
+
+    <section class="case dark" id="chro">
+      <div class="case-title"><p>02 / Selected case</p><h2>O perfil do<br>CHRO brasileiro</h2><p class="case-copy">Relatório com pesquisa, hierarquia editorial, gráficos, mapas e visualização de dados.</p></div>
+      <div class="case-gallery single"><img src="images/perfil-chro-2025.png" alt="Capa do relatório O perfil do CHRO brasileiro"></div>
+    </section>
+
+    <section class="case" id="epoca">
+      <div class="case-title"><p>03 / Editorial + Infographics</p><h2>Época<br>Negócios</h2><p class="case-copy">Infográfico sobre vazamento de dados e segurança digital. Design e organização da informação; ilustração de Guilherme Henrique.</p></div>
+      <div class="case-gallery"><img src="images/epoca-negocios-seguranca-digital.png" alt="Infográfico segurança digital"><img id="diplomados" src="images/epoca-negocios-diplomados.jpg" alt="Matéria Diplomados em isolamento"></div>
+    </section>
+
+    <section class="case dark" id="investnews">
+      <div class="case-title"><p>04 / Digital</p><h2>InvestNews</h2><p class="case-copy">Conteúdo visual para ambiente digital, combinando tipografia, ilustração, colagem e informação financeira.</p></div>
+      <div class="case-gallery"><img src="images/investnews-ia-slides.png" alt="InvestNews IA"><img src="images/investnews-ca.png" alt="InvestNews C&A"><img src="images/investnews-pagamento-exterior.png" alt="InvestNews pagamento no exterior"></div>
+    </section>
+
+    <section class="more-grid" aria-label="Outros projetos">
+      <figure id="meioambiente"><img src="images/meio-ambiente-politicas-publicas.png" alt="Meio Ambiente nas Políticas Públicas"></figure>
+      <figure id="einstein"><img src="images/einstein-insuficiencia-cardiaca.png" alt="Excelência Einstein"></figure>
+      <figure><img src="images/flash-saude-emocional-rh.png" alt="Panorama da Saúde Emocional do RH 2025"></figure>
+      <figure id="alana"><img src="images/guia-viagem-alana.png" alt="Guia de Viagem Alana"></figure>
+    </section>
+
+    <section id="about" class="about">
+      <p class="section-label">About</p>
+      <div><h2>Verucio Ferraz é designer gráfico, art director e illustrator.</h2>
+      <p>Experiência em design editorial, direção de arte, infografia, relatórios, apresentações, comunicação institucional e conteúdo digital.</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Vamos trabalhar juntos?</p>
+    <a href="mailto:contato@verucio.com">contato@verucio.com</a>
+    <p class="small">© 2026 Verucio Ferraz</p>
+  </footer>
 </body>
 </html>
