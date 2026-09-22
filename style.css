@@ -49,15 +49,15 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
   object-position:center center;transform:scale(1.08)}
 .art-meioambiente img{object-fit:contain;object-position:100% 100%;object-fit:cover;
   object-position:center center;transform:scale(1.10)}
-.art-epoca-info img{object-fit:cover;object-position:50% 50%;object-fit:cover;
-  object-position:center center;transform:scale(1.15)}
+.art-epoca-info img{object-fit:cover;object-position:40% 40%;object-fit:cover;
+  object-position:center center;transform:scale(1.08)}
 .art-einstein img{object-fit:cover;object-position:50% 50%;transform:scale(1.15)}
 .art-alana img{object-fit:contain;object-position:50% 50%;object-fit:cover;
-  object-position:center center;transform:scale(1.18)}
+  object-position:center center;transform:scale(1.08)}
 .art-investnews img{object-fit:cover;object-position:20% 20%;object-fit:cover;
   object-position:center center;transform:scale(1.08)}
 .art-diplomados img{object-fit:cover;object-position:50% 50%;object-fit:cover;
-  object-position:center center;transform:scale(1.18)}
+  object-position:center center;transform:scale(1.08)}
 
 /* O hover acrescenta somente um pequeno incremento ao zoom definido acima. */
 .art-tabuleiro:hover img{transform:scale(1.015)}
