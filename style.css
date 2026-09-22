@@ -37,60 +37,37 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
 }
 
 
-/* V6 — direção de arte individual das imagens da home.
-   Mantém o grid e a assimetria da V4. Cada projeto pode ter seu próprio
-   enquadramento sem obrigar as demais imagens a seguirem a mesma regra. */
+/* ==========================================================
+   V6 — ENQUADRAMENTO EDITORIAL POR PROJETO
+   Para ajustar no GitHub: altere apenas os valores abaixo.
+   scale(1) = imagem inteira; 1.08 = zoom leve; 1.18 = zoom maior.
+   object-position: 50% 50% = centro. Ex.: 40% 50% move o foco.
+   ========================================================== */
+.art-tabuleiro img{object-fit:cover;object-position:50% 50%;transform:scale(1.00)}
+.art-chro img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
+.art-meioambiente img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
+.art-epoca-info img{object-fit:cover;object-position:50% 50%;transform:scale(1.06)}
+.art-einstein img{object-fit:cover;object-position:50% 50%;transform:scale(1.08)}
+.art-alana img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
+.art-investnews img{object-fit:cover;object-position:50% 50%;transform:scale(1.04)}
+.art-diplomados img{object-fit:cover;object-position:50% 50%;transform:scale(1.03)}
+
+/* O hover acrescenta somente um pequeno incremento ao zoom definido acima. */
+.art-tabuleiro:hover img{transform:scale(1.015)}
+.art-chro:hover img{transform:scale(1.015)}
+.art-meioambiente:hover img{transform:scale(1.015)}
+.art-epoca-info:hover img{transform:scale(1.075)}
+.art-einstein:hover img{transform:scale(1.095)}
+.art-alana:hover img{transform:scale(1.015)}
+.art-investnews:hover img{transform:scale(1.055)}
+.art-diplomados:hover img{transform:scale(1.045)}
+
+/* Mantém o caráter da abertura V4, agora identificado como V6. */
 .hero-v6{min-height:clamp(640px,86vh,900px);padding-top:clamp(36px,4.1vw,64px)}
 .hero-v6 h1{font-size:clamp(58px,8vw,124px);max-width:1120px}
 
-/* Inteiras / com bastante respiro */
-.art-tabuleiro img,
-.art-chro img,
-.art-meioambiente img,
-.art-alana img{object-fit:contain}
-
-/* Zooms editoriais intencionais na home */
-.art-epoca-info img{
-  object-fit:cover;
-  object-position:center center;
-  transform:scale(1.08);
-}
-.art-epoca-info:hover img{transform:scale(1.105)}
-
-.art-einstein img{
-  object-fit:cover;
-  object-position:center center;
-  transform:scale(1.10);
-}
-.art-einstein:hover img{transform:scale(1.125)}
-
-.art-investnews img{
-  object-fit:cover;
-  object-position:center center;
-  transform:scale(1.06);
-}
-.art-investnews:hover img{transform:scale(1.085)}
-
-.art-diplomados img{
-  object-fit:cover;
-  object-position:center center;
-  transform:scale(1.05);
-}
-.art-diplomados:hover img{transform:scale(1.075)}
-
-/* No celular, prioriza a leitura da peça inteira. */
 @media(max-width:800px){
-  .hero-v6{min-height:calc(100svh - 52px);padding-top:38px}
-  .hero-v6 h1{font-size:clamp(47px,13.5vw,74px)}
-  .art-epoca-info img,
-  .art-einstein img,
-  .art-investnews img,
-  .art-diplomados img{
-    object-fit:contain;
-    transform:none;
-  }
-  .art-epoca-info:hover img,
-  .art-einstein:hover img,
-  .art-investnews:hover img,
-  .art-diplomados:hover img{transform:none}
+  .hero-v6{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px}
+  .hero-v6 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
+  .project img{transform:none!important;object-fit:contain!important}
 }
