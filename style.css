@@ -47,7 +47,7 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
 .art-chro img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
 .art-meioambiente img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
 .art-epoca-info img{object-fit:cover;object-position:50% 50%;transform:scale(1.06)}
-.art-einstein img{object-fit:cover;object-position:50% 50%;transform:scale(1.08)}
+.art-einstein img{object-fit:cover;object-position:20% 50%;transform:scale(1.20)}
 .art-alana img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
 .art-investnews img{object-fit:cover;object-position:50% 50%;transform:scale(1.04)}
 .art-diplomados img{object-fit:cover;object-position:50% 50%;transform:scale(1.03)}
