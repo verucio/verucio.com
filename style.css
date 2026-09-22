@@ -43,11 +43,12 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
    scale(1) = imagem inteira; 1.08 = zoom leve; 1.18 = zoom maior.
    object-position: 50% 50% = centro. Ex.: 40% 50% move o foco.
    ========================================================== */
-.art-tabuleiro img{object-fit:cover;object-position:50% 50%;transform:scale(1.08)}
-.art-chro img{object-fit:contain;object-position:50% 50%;transform:scale(1.08)}
+.art-tabuleiro img{object-fit:cover;object-position:50% 50%;transform:scale(1.02)}
+.art-chro img{object-fit:contain;object-position:100% 100%;object-fit:cover;
+  object-position:center center;transform:scale(1.08)}
 .art-meioambiente img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
 .art-epoca-info img{object-fit:cover;object-position:50% 50%;transform:scale(1.06)}
-.art-einstein img{object-fit:cover;object-position:20% 20%;transform:scale(1.10)}
+.art-einstein img{object-fit:cover;object-position:50% 50%;transform:scale(1.08)}
 .art-alana img{object-fit:contain;object-position:50% 50%;transform:scale(1.00)}
 .art-investnews img{object-fit:cover;object-position:50% 50%;transform:scale(1.04)}
 .art-diplomados img{object-fit:cover;object-position:50% 50%;transform:scale(1.03)}
