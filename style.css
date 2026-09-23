@@ -40,10 +40,5 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
 
 .case-head {
   align-items: end;
-  padding-bottom: 0;
 }
 
-.case-head h1,
-.case-head p {
-  margin-bottom: 0;
-}
