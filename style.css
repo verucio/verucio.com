@@ -37,3 +37,13 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
  .email{font-size:clamp(29px,9vw,54px)}.contact-details{grid-template-columns:1fr;gap:12px}.contact-details a:last-child{text-align:left}
  .case-page{padding-top:45px}.case-head{display:block}.case-head h1{margin-bottom:28px}.case-grid{grid-template-columns:1fr}
 }
+
+.case-head {
+  align-items: end;
+  padding-bottom: 0;
+}
+
+.case-head h1,
+.case-head p {
+  margin-bottom: 0;
+}
