@@ -3,11 +3,11 @@
 .topbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);background:rgba(244,242,237,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .brand{font-size:14px;font-weight:800;letter-spacing:.02em}.topbar nav{display:flex;gap:24px;font-size:14px}.topbar nav a{transition:opacity .2s}.topbar nav a:hover{opacity:.5}
 .hero{min-height:calc(100vh - 56px);padding:clamp(52px,6vw,92px) var(--pad) 28px;display:grid;grid-template-rows:auto 1fr auto;gap:28px}
-.eyebrow,.section-label,.case-title>p{font-size:12px;text-transform:uppercase;letter-spacing:.12em}.eyebrow{margin:0}
-.hero h1{align-self:center;font-size:clamp(58px,8.4vw,132px);line-height:.88;letter-spacing:-.048em;margin:0;max-width:1200px;font-weight:700}
+.eyebrow,.section-label{font-size:12px;text-transform:uppercase;letter-spacing:.12em}.eyebrow{margin:0}
+.hero h1{align-self:center;font-size:clamp(58px,8.4vw,132px);line-height:.88;letter-spacing:-.045em;margin:0;max-width:1200px;font-weight:700}
 .hero-foot{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:16px;gap:30px}.hero-foot p{max-width:600px;margin:0;font-size:clamp(16px,1.25vw,20px);line-height:1.35}.arrow{font-size:14px;white-space:nowrap}
+.hero-v7{min-height:clamp(640px,86vh,900px);padding-top:clamp(36px,4.1vw,64px)}.hero-v7 h1{font-size:clamp(58px,8vw,124px);max-width:1120px}
 
-/* V4: grid editorial deliberado 8/4 → 5/7 → 8/4 → 5/7 */
 .work{padding:48px var(--pad) 130px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(58px,5.5vw,92px) 30px;align-items:start}
 .project-8{grid-column:span 8}.project-4{grid-column:span 4}.project-5{grid-column:span 5}.project-7{grid-column:span 7}
 .project figure{margin:0;overflow:hidden;background:#ebe9e3;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3}
@@ -15,66 +15,25 @@
 .project img{width:100%;height:100%;object-fit:contain;transition:transform .55s cubic-bezier(.2,.8,.2,1)}.project:hover img{transform:scale(1.012)}
 .meta{display:flex;justify-content:space-between;align-items:flex-start;gap:22px;padding-top:12px;border-top:1px solid var(--ink);margin-top:10px;min-height:54px}.meta h2,.meta p{font-size:13px;line-height:1.25;margin:0}.meta h2{font-weight:700;max-width:58%}.meta p{text-align:right;opacity:.6;max-width:42%}
 
-.case{padding:110px var(--pad);display:grid;grid-template-columns:4fr 8fr;gap:30px;border-top:1px solid var(--line)}.case.dark{background:#111;color:#f5f2ea}.case-title{position:sticky;top:90px;align-self:start}.case-title h2{font-size:clamp(44px,6vw,90px);line-height:.92;letter-spacing:-.055em;margin:24px 0}.case-copy{max-width:430px;font-size:16px;line-height:1.45}.case-gallery{display:grid;gap:16px}.case-gallery img{background:#fff}.case-gallery.single img{max-height:900px;object-fit:contain}
-.more-grid{padding:100px var(--pad);display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.more-grid figure{margin:0;background:#ddd;display:grid;place-items:center;min-height:400px;overflow:hidden}.more-grid img{width:100%;height:100%;object-fit:contain}
-.about{padding:130px var(--pad);border-top:1px solid var(--line);display:grid;grid-template-columns:4fr 8fr;gap:30px}.about h2{font-size:clamp(42px,6.2vw,92px);line-height:1;letter-spacing:-.035em;margin:0 0 40px;max-width:1000px}.about div>p{font-size:clamp(18px,1.8vw,27px);line-height:1.35;max-width:850px}.about-secondary{margin-top:24px!important;font-size:clamp(16px,1.35vw,21px)!important;line-height:1.5!important;opacity:.72}
-footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first-child{font-size:14px}footer>a{display:inline-block;font-size:clamp(38px,7vw,108px);letter-spacing:-.06em;border-bottom:2px solid currentColor;margin:35px 0 90px}.small{font-size:12px;opacity:.6}
+.art-epoca-info img{object-fit:cover;transform:scale(1.04)}.art-epoca-info:hover img{transform:scale(1.065)}
+.art-einstein img{object-fit:cover;transform:scale(1.10)}.art-einstein:hover img{transform:scale(1.125)}
+.art-investnews img{object-fit:cover;transform:scale(1.00)}.art-investnews:hover img{transform:scale(1.02)}
+.art-diplomados img{object-fit:cover;transform:scale(1.02)}.art-diplomados:hover img{transform:scale(1.045)}
+.art-territorio img,.art-transversalidade img,.art-ias img{object-fit:cover}
 
-/* V4: abertura um pouco mais compacta sem perder o vazio */
-.hero-v4{min-height:clamp(640px,86vh,900px);padding-top:clamp(36px,4.1vw,64px)}
-.hero-v4 h1{font-size:clamp(58px,8vw,124px);max-width:1120px}
+.about{padding:130px var(--pad);border-top:1px solid var(--line);display:grid;grid-template-columns:4fr 8fr;gap:30px}.about h2{font-size:clamp(42px,6.2vw,92px);line-height:.95;letter-spacing:-.035em;margin:0 0 40px;max-width:1000px}.about div>p{font-size:clamp(18px,1.8vw,27px);line-height:1.35;max-width:850px}.about-secondary{margin-top:24px!important;font-size:clamp(16px,1.35vw,21px)!important;line-height:1.5!important;opacity:.72}
+footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first-child{font-size:14px}.email{display:inline-block;font-size:clamp(38px,7vw,108px);letter-spacing:-.045em;margin:35px 0 54px}
+.contact-details{border-top:1px solid rgba(245,242,234,.28);padding:22px 0 70px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;font-size:14px}.contact-details a:last-child{text-align:right}.small{font-size:12px;opacity:.6}
 
-@media(max-width:800px){
-  .topbar{padding-top:15px;padding-bottom:15px}.topbar nav{gap:14px}
-  .hero,.hero-v4{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px;gap:22px}.hero h1,.hero-v4 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
-  .hero-foot{display:block}.arrow{display:inline-block;margin-top:22px}
-  .work{display:block;padding-top:34px;padding-bottom:70px}.project{margin-bottom:54px}.project figure,.project-8 figure,.project-7 figure,.project-5 figure,.project-4.project-tall figure{aspect-ratio:auto}.project img{height:auto}
-  .meta{display:block;min-height:0}.meta h2,.meta p{max-width:none}.meta p{text-align:left;margin-top:5px}
-  .case{display:block;padding:70px var(--pad)}.case-title{position:static;margin-bottom:40px}.case-gallery{gap:10px}
-  .more-grid{grid-template-columns:1fr;padding:70px var(--pad)}.more-grid figure{min-height:0}
-  .about{display:block;padding:80px var(--pad)}.section-label{margin-bottom:40px}.about-secondary{margin-top:18px!important}
-  footer>a{font-size:clamp(29px,9vw,54px)}
-}
-
-
-/* ==========================================================
-   V6 — ENQUADRAMENTO EDITORIAL POR PROJETO
-   Para ajustar no GitHub: altere apenas os valores abaixo.
-   scale(1) = imagem inteira; 1.08 = zoom leve; 1.18 = zoom maior.
-   object-position: 50% 50% = centro. Ex.: 40% 50% move o foco.
-   ========================================================== */
-.art-tabuleiro img{object-fit:cover;object-position:120% 120%;object-fit:cover;
-  object-position:center center;transform:scale(1.08)}
-.art-chro img{object-fit:contain;object-position:100% 100%;object-fit:cover;
-  object-position:center center;transform:scale(1.08)}
-.art-meioambiente img{object-fit:contain;object-position:100% 100%;object-fit:cover;
-  object-position:center center;transform:scale(1.10)}
-.art-epoca-info img{object-fit:cover;object-position:40% 40%;object-fit:cover;
-  object-position:center center;transform:scale(1.08)}
-.art-einstein img{object-fit:cover;object-position:50% 50%;transform:scale(1.15)}
-.art-alana img{object-fit:contain;object-position:50% 50%;object-fit:cover;
-  object-position:center center;transform:scale(1.08)}
-.art-investnews img{object-fit:cover;object-position:20% 20%;object-fit:cover;
-  object-position:center center;transform:scale(1.08)}
-.art-diplomados img{object-fit:cover;object-position:50% 50%;object-fit:cover;
-  object-position:center center;transform:scale(1.08)}
-
-/* O hover acrescenta somente um pequeno incremento ao zoom definido acima. */
-.art-tabuleiro:hover img{transform:scale(1.015)}
-.art-chro:hover img{transform:scale(1.015)}
-.art-meioambiente:hover img{transform:scale(1.015)}
-.art-epoca-info:hover img{transform:scale(1.075)}
-.art-einstein:hover img{transform:scale(1.095)}
-.art-alana:hover img{transform:scale(1.015)}
-.art-investnews:hover img{transform:scale(1.055)}
-.art-diplomados:hover img{transform:scale(1.045)}
-
-/* Mantém o caráter da abertura V4, agora identificado como V6. */
-.hero-v6{min-height:clamp(640px,86vh,900px);padding-top:clamp(36px,4.1vw,64px)}
-.hero-v6 h1{font-size:clamp(58px,8vw,124px);max-width:1120px}
+.case-page{padding:70px var(--pad) 120px}.case-head{display:grid;grid-template-columns:4fr 8fr;gap:30px;border-bottom:1px solid var(--line);padding-bottom:60px;margin-bottom:50px}.case-head h1{font-size:clamp(52px,8vw,120px);line-height:.9;letter-spacing:-.045em;margin:0}.case-head p{font-size:clamp(18px,1.6vw,24px);line-height:1.4;margin:0;max-width:720px}.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.case-grid figure{margin:0;background:#ebe9e3}.case-grid .wide{grid-column:1/-1}.back{display:inline-block;margin-bottom:45px;font-size:14px}
 
 @media(max-width:800px){
-  .hero-v6{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px}
-  .hero-v6 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
-  .project img{transform:none!important;object-fit:contain!important}
+ .topbar{padding-top:15px;padding-bottom:15px}.topbar nav{gap:14px}
+ .hero,.hero-v7{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px;gap:22px}.hero h1,.hero-v7 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
+ .hero-foot{display:block}.arrow{display:inline-block;margin-top:22px}
+ .work{display:block;padding-top:34px;padding-bottom:70px}.project{margin-bottom:54px}.project figure,.project-8 figure,.project-7 figure,.project-5 figure,.project-4.project-tall figure{aspect-ratio:auto}.project img{height:auto;object-fit:contain;transform:none!important}
+ .meta{display:block;min-height:0}.meta h2,.meta p{max-width:none}.meta p{text-align:left;margin-top:5px}
+ .about{display:block;padding:80px var(--pad)}.section-label{margin-bottom:40px}.about-secondary{margin-top:18px!important}
+ .email{font-size:clamp(29px,9vw,54px)}.contact-details{grid-template-columns:1fr;gap:12px}.contact-details a:last-child{text-align:left}
+ .case-page{padding-top:45px}.case-head{display:block}.case-head h1{margin-bottom:28px}.case-grid{grid-template-columns:1fr}
 }
