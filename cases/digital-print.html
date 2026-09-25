@@ -30,15 +30,15 @@
              alt="Projeto editorial Digital+print">
       </figure>
         
-    <figure>
-  <a href="../images/Mapa-02.jpg" target="_blank" rel="noopener">
-    <img src="../images/Mapa-02.jpg" alt="Abrir Mapa 2 em tamanho maior">
+ <figure>
+  <a class="open-image" href="../images/Mapa-02.jpg">
+    <img src="../images/Mapa-02.jpg" alt="Mapa 2">
   </a>
 </figure>
 
 <figure>
-  <a href="../images/Mapa-03.jpg" target="_blank" rel="noopener">
-    <img src="../images/Mapa-03.jpg" alt="Abrir Mapa 3 em tamanho maior">
+  <a class="open-image" href="../images/Mapa-03.jpg">
+    <img src="../images/Mapa-03.jpg" alt="Mapa 3">
   </a>
 </figure>
         
@@ -48,5 +48,31 @@
         
     </section>
   </main>
+  <dialog class="image-lightbox" id="image-lightbox" aria-label="Imagem ampliada">
+  <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
+  <img src="" alt="">
+</dialog>
+
+<script>
+  const lightbox = document.getElementById('image-lightbox');
+  const largeImage = lightbox.querySelector('img');
+
+  document.querySelectorAll('.open-image').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      largeImage.src = link.href;
+      largeImage.alt = link.querySelector('img').alt;
+      lightbox.showModal();
+    });
+  });
+
+  lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+    lightbox.close();
+  });
+
+  lightbox.addEventListener('click', event => {
+    if (event.target === lightbox) lightbox.close();
+  });
+</script>
 </body>
 </html>
