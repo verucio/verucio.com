@@ -49,7 +49,7 @@
 .art-ias:hover img{transform:scale(1.012)}
 
 .about{padding:130px var(--pad);border-top:1px solid var(--line);display:grid;grid-template-columns:4fr 8fr;gap:30px}.about h2{font-size:clamp(42px,6.2vw,92px);line-height:.95;letter-spacing:-.035em;margin:0 0 40px;max-width:1000px}.about div>p{font-size:clamp(18px,1.8vw,27px);line-height:1.35;max-width:850px}.about-secondary{margin-top:24px!important;font-size:clamp(16px,1.35vw,21px)!important;line-height:1.5!important;opacity:.72}
-footer{background:#e53e37;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first-child{font-size:14px}.email{display:inline-block;font-size:clamp(38px,7vw,108px);letter-spacing:-.045em;margin:35px 0 54px}
+footer{background:#0492de;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first-child{font-size:14px}.email{display:inline-block;font-size:clamp(38px,7vw,108px);letter-spacing:-.045em;margin:35px 0 54px}
 .contact-details{border-top:1px solid rgba(245,242,234,.28);padding:22px 0 70px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;font-size:14px}.contact-details a:last-child{text-align:right}.small{font-size:12px;opacity:.6}
 
 .case-page{padding:70px var(--pad) 120px}.case-head{display:grid;grid-template-columns:4fr 8fr;gap:30px;border-bottom:1px solid var(--line);padding-bottom:60px;margin-bottom:50px}.case-head h1{font-size:clamp(52px,8vw,120px);line-height:.9;letter-spacing:-.045em;margin:0}.case-head p{font-size:clamp(18px,1.6vw,24px);line-height:1.4;margin:0;max-width:720px}.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.case-grid figure{margin:0;background:#ebe9e3}.case-grid .wide{grid-column:1/-1}.back{display:inline-block;margin-bottom:45px;font-size:14px}
