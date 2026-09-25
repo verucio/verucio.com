@@ -54,6 +54,42 @@ footer{background:#111;color:#f5f2ea;padding:70px var(--pad) 35px}footer>p:first
 
 .case-page{padding:70px var(--pad) 120px}.case-head{display:grid;grid-template-columns:4fr 8fr;gap:30px;border-bottom:1px solid var(--line);padding-bottom:60px;margin-bottom:50px}.case-head h1{font-size:clamp(52px,8vw,120px);line-height:.9;letter-spacing:-.045em;margin:0}.case-head p{font-size:clamp(18px,1.6vw,24px);line-height:1.4;margin:0;max-width:720px}.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.case-grid figure{margin:0;background:#ebe9e3}.case-grid .wide{grid-column:1/-1}.back{display:inline-block;margin-bottom:45px;font-size:14px}
 
+.open-image {
+  display: block;
+  cursor: zoom-in;
+}
+
+.image-lightbox {
+  position: fixed;
+  max-width: 94vw;
+  max-height: 94vh;
+  padding: 36px 12px 12px;
+  border: 0;
+  background: #f4f2ed;
+}
+
+.image-lightbox::backdrop {
+  background: rgba(0, 0, 0, .85);
+}
+
+.image-lightbox img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(94vh - 48px);
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  border: 0;
+  background: transparent;
+  font: 32px Arial, sans-serif;
+  cursor: pointer;
+}
+
 @media(max-width:800px){
  .topbar{padding-top:15px;padding-bottom:15px}.topbar nav{gap:14px}
  .hero,.hero-v7{min-height:calc(100svh - 52px);padding-top:38px;padding-bottom:24px;gap:22px}.hero h1,.hero-v7 h1{font-size:clamp(47px,13.5vw,74px);line-height:.9}
